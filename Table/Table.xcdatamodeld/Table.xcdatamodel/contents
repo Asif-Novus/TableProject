@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="8118.20" systemVersion="15A284" minimumToolsVersion="Automatic">
+    <entity name="Detail" representedClassName="Detail" syncable="YES">
+        <attribute name="dept" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="info" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Info" inverseName="detail" inverseEntity="Info" syncable="YES"/>
+    </entity>
+    <entity name="Info" representedClassName="Info" syncable="YES">
+        <attribute name="age" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="detail" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Detail" inverseName="info" inverseEntity="Detail" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Info" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="Detail" positionX="-45" positionY="27" width="128" height="75"/>
+    </elements>
+</model>
